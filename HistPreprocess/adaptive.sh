@@ -1,0 +1,14 @@
+python roi_generator.py \
+--save-tilecrossed-image \
+--output-downsample 1 \
+--mask-downsample 4 \
+--tilecross-downsample 8 \
+--content-threshold 0.2 \
+--info verbose \
+--patch-size 512 \
+--overlap 128 \
+--save-patches \
+--save-annotations \
+--method adaptive \
+--svs /home/yiz370/kidney/Slides/RA1123_PASD_jkers_PASD_20180729_161859.tiff \
+--output /home/yiz370/WSI_patches
