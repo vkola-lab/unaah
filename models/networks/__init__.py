@@ -1,5 +1,5 @@
-from .ParallelUnet import *
-from .ParallelNestedUnet import *
+from .UNaah import *
+from .UNaah_Nested import *
 
 def get_network(name, backbone_name, n_classes=2, pretrained=True, encoder_freeze=False,
                 shortcut_features='default', decoder_filter_block=64,decoder_use_batchnorm=True):

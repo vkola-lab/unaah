@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from torchvision import models
 from torch.nn import functional as F
-from .ParallelUnet import get_backbone, Encoder
+from .UNaah_Nested import get_backbone, Encoder
 
 def get_skip_in(name, block):
     """ check backbone, defining skip_in for each block """
