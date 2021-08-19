@@ -5,7 +5,7 @@ This work is published in #TODO
 
 This repo contains a PyTorch implementation of a deep learning framework that applies multiple experts' annotations in the learning stage and makes predciton with both accuracy and generalization. Our framework links a backboned encoder and 2 U-Net decoders where each decoder learns from a different annotation and updates paramaters back to the shared encoder. The structure is shown below. 
 
-<img src="plots/ivus.png" width="425"/> 
+<img src="plots/ivus.png" width="600"/> 
 
 The model was developed on two different datasets: whole scan images (WSIs) and intravascular ultrasound scans where each datasets involves 10 patients and during each model development, a 5-round cross-validation strategy was applied to ensure the reliablity.  
 <img src="plots/glom1.png" width="600"/> 
