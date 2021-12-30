@@ -13,9 +13,9 @@ The model was developed on two different datasets: whole scan images (WSIs) and 
 
 The performance of the final global prediction from each UNaah model was compared against 2 experts' annotations and along with original U-Net models trained using each expert's annotation only. Example results are shown below.
 
-Kidney WSI:
+Kidney WSI:<br/>
 <img src="plots/WSI_unaah5.jpg" width="395"/>
-IVUS scan:
+IVUS scan:<br/>
 <img src="plots/IVUS_result3.jpg" width="395"/>
 
 Please refer to our paper for more details. 
@@ -43,7 +43,9 @@ Please contact us for requiring raw data due to the size of data and privacy.
 jupyter notebook
 click 'create_binary_mask.ipynb'
 ```
-where you can create and modify your own masking scripts.
+where you can create and modify your own masking scripts. 
+### YOU MAY NEED ADDITIONAL SCRIPTS TO GROUP YOUR TRAINING AND VALIDATION DATA.
+
 
 * **Patching Whole-Slide-Images**
     
