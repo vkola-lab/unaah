@@ -7,16 +7,14 @@ This repo contains a PyTorch implementation of a deep learning framework that ap
 
 <img src="plots/fig3.png" width="600"/> 
 
-The model was developed on two different datasets: whole scan images (WSIs) and intravascular ultrasound scans where each datasets involves 10 patients and during each model development, a 5-round cross-validation strategy was applied to ensure the reliablity. The description of each dataset is shown below.<br/>
-<img src="plots/glom1.png" width="600"/> <br/>
-<img src="plots/IVUS_dataset.jpg" width="395"/>
+The model was developed on two different datasets: whole scan images (WSIs) and intravascular ultrasound scans where each datasets involves 10 patients and during each model development, a 5-round cross-validation strategy was applied to ensure the reliablity. The description of each dataset is shown below.
 
 The performance of the final global prediction from each UNaah model was compared against 2 experts' annotations and along with original U-Net models trained using each expert's annotation only. Example results are shown below.
 
 Kidney WSI:<br/>
 <img src="plots/WSI_unaah5.jpg" width="395"/><br/>
 IVUS scan:<br/>
-<img src="plots/IVUS_result3.jpg" width="395"/>
+<img src="plots/IVUS_result1.jpg" width="395"/>
 
 Please refer to our paper for more details. 
 
@@ -44,7 +42,9 @@ jupyter notebook
 click 'create_binary_mask.ipynb'
 ```
 where you can create and modify your own masking scripts. 
-### Additional scripts are needed to group training and validation data.
+
+### YOU MAY NEED ADDITIONAL SCRIPTS TO GROUP YOUR TRAINING AND VALIDATION DATA:
+Since this project applied 5-cross validation using 2 experts' annotation in each dataset, we wrote our own script to split images and masks in patient level (hard coding if patient names or accessions involved). The ratio of training:test is 8:2. If you are lack of clean test data due to sample sizes, we suggest to split like this: training:validation:test = 6:2:2. You may need to code your own data splitter.
 
 
 * **Patching Whole-Slide-Images**
@@ -70,6 +70,5 @@ Model weights and predicted raw scores on each subjects will be saved in:
 ./save/...
 ```
 
-### You are free to modify and customize your own trainers based on your data type. Hyper-parameters used in IVUS trainers and WSI trainers fit their corresponding dataset only
-
-### Expert annotations on the IVUS and whole slide images were performed using PixelView (deepPath, Inc.)
+### You are free to modify and customize your own trainers
+In testers and trainers, you will find built-in functions that are customized for this project which in your case, you might want to remove or modify them. Hyper-parameters used in IVUS trainers and WSI trainers, such as learning rate, number of epochs, batch size, number of output classes, fit their corresponding dataset only. You will need to check and modify based on your data type.
