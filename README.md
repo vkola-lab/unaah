@@ -72,4 +72,4 @@ Model weights and predicted raw scores on each subjects will be saved in:
 
 ### You are free to modify and customize your own trainers based on your data type. Hyper-parameters used in IVUS trainers and WSI trainers fit their corresponding dataset only
 
-# Expert annotations on the IVUS and whole slide images were performed using PixelView (deepPath, Inc.)
+### Expert annotations on the IVUS and whole slide images were performed using PixelView (deepPath, Inc.)
