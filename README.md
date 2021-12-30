@@ -7,14 +7,14 @@ This repo contains a PyTorch implementation of a deep learning framework that ap
 
 <img src="plots/fig3.png" width="600"/> 
 
-The model was developed on two different datasets: whole scan images (WSIs) and intravascular ultrasound scans where each datasets involves 10 patients and during each model development, a 5-round cross-validation strategy was applied to ensure the reliablity. The description of each dataset is shown below.
-<img src="plots/glom1.png" width="600"/> 
+The model was developed on two different datasets: whole scan images (WSIs) and intravascular ultrasound scans where each datasets involves 10 patients and during each model development, a 5-round cross-validation strategy was applied to ensure the reliablity. The description of each dataset is shown below.<br/>
+<img src="plots/glom1.png" width="600"/> <br/>
 <img src="plots/IVUS_dataset.jpg" width="395"/>
 
 The performance of the final global prediction from each UNaah model was compared against 2 experts' annotations and along with original U-Net models trained using each expert's annotation only. Example results are shown below.
 
 Kidney WSI:<br/>
-<img src="plots/WSI_unaah5.jpg" width="395"/>
+<img src="plots/WSI_unaah5.jpg" width="395"/><br/>
 IVUS scan:<br/>
 <img src="plots/IVUS_result3.jpg" width="395"/>
 
