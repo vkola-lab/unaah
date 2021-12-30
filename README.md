@@ -71,4 +71,4 @@ Model weights and predicted raw scores on each subjects will be saved in:
 ```
 
 ### You are free to modify and customize your own trainers
-In testers and trainers, you will find built-in functions that are customized for this project which in your case, you might want to remove or modify them. Hyper-parameters used in IVUS trainers and WSI trainers, such as learning rate, number of epochs, batch size, number of output classes, fit their corresponding dataset only. You will need to check and modify based on your data type.
+In testers and trainers, you will find built-in functions that are customized for this project, for example, the adapative contrast normalization function in the IVUS trainer, which in your case, you might want to remove or modify them. Hyper-parameters used in IVUS trainers and WSI trainers, such as learning rate, number of epochs, batch size, number of output classes, fit their corresponding dataset only. You will need to check and modify based on your data type.
