@@ -44,7 +44,7 @@ jupyter notebook
 click 'create_binary_mask.ipynb'
 ```
 where you can create and modify your own masking scripts. 
-### YOU MAY NEED ADDITIONAL SCRIPTS TO GROUP YOUR TRAINING AND VALIDATION DATA.
+### Additional scripts are needed to group training and validation data.
 
 
 * **Patching Whole-Slide-Images**
