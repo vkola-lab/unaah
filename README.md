@@ -1,5 +1,5 @@
 # U-Net-and-a-half: Convolutional network for biomedical image segmentation using multiple expert-driven annotations
-This work is/will be published in EBioMedicine
+This work under peer review.
 
 ## Introduction
 
